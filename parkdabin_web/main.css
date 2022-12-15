@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+section{
+    width: 100%; 
+    z-index: 1;   
+}
+.wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/**---비디오---**/
+
+.video_wrap{
+    position: relative;
+    height: 800px;
+    border: 0px solid red;
+    overflow: hidden;
+    margin-bottom: 222px;
+}
+
+.video_wrap > video{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/**---메인---**/
+
+.box{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+}
+
+.box01{
+    height: 251px;
+    background-color: #9F7CFF;
+    border: 0px solid olivedrab;
+}
+
+.main01{
+    position: absolute;
+    height: 251px;
+    margin-top: 33px;
+}
+
+.main01 img {cursor: pointer;}
+
+.main01:hover img {
+    transition: all 0.2s; 
+    transform: scale(1.05);
+}
+
+.box02{
+    height: 135px;
+    top: 134px;
+    animation: bounce-in-top 1.1s both;
+    animation-iteration-count: 2;
+}
+
+.box03{
+    border: 0px solid red;
+    width: 100%;
+    height: 1744px;
+    border: 0px solid red;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main02 {
+    border: 0px solid red;
+    height: 144px;
+    position: absolute;
+    margin-left: 900px;
+    margin-top: 174px;
+}
+
+.main03 {
+    border: 0px solid red;
+    height: 97px;
+    position: absolute;
+    margin-left: 900px;
+    margin-top: 941px;
+}
+
+.main04 {
+    border: 0px solid red;
+    height: 116px;
+    position: absolute;
+    margin-right: 970px;
+    margin-top: 574px;
+}
+
+.main05 {
+    border: 0px solid red;
+    height: 79px;
+    position: absolute;
+    margin-right: 900px;
+    margin-top: 1736px;
+}
+
+.project {
+    border: 0px solid yellow;
+    width: 729px; 
+    height: 1410px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 322px;
+}
+
+.project li {
+    position: relative; 
+}
+
+.project li .pj {
+    width: 343px; 
+    height: 582px; 
+    overflow: hidden;
+}
+
+.project li .bt {
+    border: 0px solid red;
+    position: absolute; 
+    align-items: center; 
+    width: 168px;
+    height: 53px;
+    left: 87px;
+    margin-top: 31px;
+}
+
+.project li .bt img {cursor: pointer;}
+.project li .bt:hover img {
+    transition: all 0.2s; 
+    transform: scale(1.05);
+}
+
+/**---푸터---**/
+
+footer{
+    border: 0px solid red;
+    width: 100%;
+    height: 231px;
+    background-color: #EEE8FF;
+    position: absolute;
+    margin-top: 145px;
+} 
+
+.foot{
+    margin: 0 auto;
+    width: 1100px;
+    height: 229px;
+    border: 0px solid red;
+}
+
+.my { 
+    position: absolute;
+    border: 0px solid red;
+    width: 95px;
+    height: 88px;
+    top: 41px;
+    left: 50px;
+}
+
+.contact { 
+    position: absolute;
+    border: 0px solid red;
+    width: 335px;
+    height: 149px;
+    top: 50px;
+    right: 20px;
+    
+}
+
+.copyright{    
+    position: absolute;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:600;
+    font-size: 15px;
+    color: #7c4dff;
+    letter-spacing: 0em;
+    line-height: 3.6666666666666665;
+    border: 0px solid red;
+    top: 161px;
+    left: 50px;
+}
+
+/**---모션---**/
+
+@-webkit-keyframes bounce-in-top {
+    0% {
+        transform: translateY(-500px);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    38% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    55% {
+        transform: translateY(-65px);
+        animation-timing-function: ease-in;
+    }
+    72% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+    81% {
+        transform: translateY(-28px);
+        animation-timing-function: ease-in;
+    }
+    90% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+    95% {
+        transform: translateY(-8px);
+        animation-timing-function: ease-in;
+    }
+    100% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+}
+  }
